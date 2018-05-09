@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizzes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% quizzes.forEach( quiz => { %>
+    <li> <%=quiz.question %>:<%=quiz.answer%></li>
+    <%})%>
+    <p>
+     <a href="/credits">Credits</a>
+    <a href="/quizzes">Quizzes</a>
+    </p>
+  </body>
+</html>
